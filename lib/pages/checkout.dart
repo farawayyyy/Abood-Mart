@@ -66,19 +66,16 @@ class _CheckoutState extends State<Checkout> {
                             color: Colors.pink),
                       )),
                   Consumer<Cart>(builder: (context, cart, child) {
-                    return TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        '${cart.totalprice}\$',
-                        style: TextStyle(fontSize: 30, color: Colors.blue),
-                      ),
+                    return Text(
+                      '${cart.totalprice}\$',
+                      style: TextStyle(fontSize: 20, color: Colors.blue),
                     );
                   }),
                   Container(
                       padding: EdgeInsets.only(right: 5),
                       child: Icon(
                         Icons.credit_card,
-                        size: 35,
+                        size: 20,
                         color: Colors.purple,
                       )),
                 ],

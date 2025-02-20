@@ -3,7 +3,7 @@ import './items.dart';
 
 class Cart with ChangeNotifier {
   List<Item> _Items = [];
-  double _price = 0.0;
+  double _price = 0;
   void add(Item item) {
     _Items.add(item);
     _price += item.price;
