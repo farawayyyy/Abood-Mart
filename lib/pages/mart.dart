@@ -28,7 +28,7 @@ class _HomeState extends State<Mart> {
                 color: Colors.white,
               ),
               Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(7.0),
                   child: Consumer<Cart>(builder: (context, cart, child) {
                     return Text(
                       '${cart.count}',
